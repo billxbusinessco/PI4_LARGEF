@@ -1,0 +1,1 @@
+[16:47:46.393203 ERROR] [openstudio.workflow.OSWorkflow] Found error in state 'Initialization' with message: 'Seed model 1cd34e7d-461f-4554-b970-c1d53a70670schedule_change_resistance_change.osm specified in OSW cannot be found'

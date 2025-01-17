@@ -1,0 +1,6 @@
+[17:01:25.994097 WARN] [openstudio.EpwFile] Successive data points (2012-Jan-31 to 2011-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'D:/PI4_main/CWEC_2020_QC/CAN_QC_HIGH-FALLS_7033121_CWEC.epw'. Data will be treated as typical (TMY)
+[17:01:26.148400 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[17:01:26.151375 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[17:01:26.156381 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[17:01:26.254085 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[17:01:26.255086 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional 1 from field 1, but that object cannot be located.

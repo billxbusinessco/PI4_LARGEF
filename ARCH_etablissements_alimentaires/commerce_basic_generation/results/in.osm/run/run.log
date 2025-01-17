@@ -1,0 +1,6 @@
+[21:34:20.409075 WARN] [openstudio.EpwFile] Successive data points (1966-Jan-31 to 1970-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'D:/PI4_main/ARCH_etablissements_alimentaires/commerce_basic_generation/results/in.osm/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw'. Data will be treated as typical (TMY)
+[21:34:20.530595 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[21:34:20.535598 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[21:34:20.540594 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[21:34:20.633138 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[21:34:20.633138 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional 1 from field 1, but that object cannot be located.

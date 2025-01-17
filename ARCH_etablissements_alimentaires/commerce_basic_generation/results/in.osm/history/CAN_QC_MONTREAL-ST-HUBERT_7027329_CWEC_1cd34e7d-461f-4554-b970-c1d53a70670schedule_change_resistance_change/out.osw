@@ -1,0 +1,19 @@
+{
+   "completed_at" : "20250114T214746Z",
+   "completed_status" : "Fail",
+   "file_paths" : 
+   [
+      "D:/PI4_main/ARCH_etablissements_alimentaires/commerce_basic_generation/results/in.osm/CAN_QC_MONTREAL-ST-HUBERT_7027329_CWEC_1cd34e7d-461f-4554-b970-c1d53a70670schedule_change_resistance_change/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "F9FE5B28",
+   "run_options" : null,
+   "seed_file" : "1cd34e7d-461f-4554-b970-c1d53a70670schedule_change_resistance_change.osm",
+   "steps" : [],
+   "updated_at" : "20250114T214746Z",
+   "weather_file" : "D:\\PI4_main\\CWEC_2020_QC\\CAN_QC_MONTREAL-ST-HUBERT_7027329_CWEC.epw"
+}

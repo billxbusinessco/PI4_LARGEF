@@ -1,0 +1,103 @@
+[20:49:30.297386 DEBUG] [openstudio.workflow.OSWorkflow] Removing existing run directory: C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/run
+[20:49:30.298969 DEBUG] [openstudio.workflow.OSWorkflow] Registering that the workflow has started with the adapter
+[20:49:30.299978 DEBUG] [openstudio.workflow.OSWorkflow] Initialization - selected = true
+[20:49:30.299978 DEBUG] [openstudio.workflow.OSWorkflow] The root_dir for the datapoint is C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources
+[20:49:30.300979 DEBUG] [openstudio.workflow.OSWorkflow] Creating generated files directory: C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/generated_files
+[20:49:30.301976 DEBUG] [openstudio.workflow.OSWorkflow] Finding and loading the seed file
+[20:49:30.306495 INFO] [openstudio.worklow.Util] Loading OSM model
+[20:49:30.306495 INFO] [openstudio.worklow.Util] Reading in OSM model C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/1cd34e7d-461f-4554-b970-c1d53a70670schedule_change.osm
+[20:49:30.317163 DEBUG] [openstudio.osversion.VersionTranslator] Starting translation from Version 3.7.0.
+[20:49:30.373009 DEBUG] [openstudio.osversion.VersionTranslator] Initial model has 956 objects.
+[20:49:30.373009 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 956 objects in IDF form.
+[20:49:30.402369 DEBUG] [utilities.idf.Workspace] Workspace::isValid called.
+[20:49:30.505558 DEBUG] [openstudio.osversion.VersionTranslator] Final model has 956 objects in Model form.
+[20:49:30.511555 DEBUG] [openstudio.workflow.OSWorkflow] Initialize the weather file from osw
+[20:49:30.511555 DEBUG] [openstudio.workflow.OSWorkflow] Search for weather file defined by osw CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw
+[20:49:30.521008 DEBUG] [openstudio.EpwFile] No Daylightings Saving start Date
+[20:49:30.524095 WARN] [openstudio.EpwFile] Successive data points (1966-Jan-31 to 1970-Feb-01, ending on line 753) are greater than 1 day apart in EPW file 'C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/files/CAN_PQ_Montreal.Intl.AP.716270_CWEC.epw'. Data will be treated as typical (TMY)
+[20:49:30.562504 DEBUG] [openstudio.workflow.OSWorkflow] OpenStudioMeasures - selected = true
+[20:49:30.562504 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute OpenStudio Measures
+[20:49:30.562504 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ModelMeasure
+[20:49:30.562504 INFO] [openstudio.workflow.OSWorkflow] Finished applying OpenStudio Measures.
+[20:49:30.626947 DEBUG] [openstudio.workflow.OSWorkflow] Translator - selected = true
+[20:49:30.632955 INFO] [openstudio.workflow.OSWorkflow] Beginning the translation to IDF
+[20:49:30.694965 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Wall_East_1
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Roof
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] [25.135, 3, 6.096] is on Surface3dEdge: start=[25.135, 0, 6.096], end=[25.135, 3, 6.096], count=1, firstSurface='Point_Of_Sale_Roof'
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Floor
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] [25.135, 3, 0] is on Surface3dEdge: start=[25.135, 6, 0], end=[25.135, 3, 0], count=1, firstSurface='Point_Of_Sale_Floor'
+[20:49:30.695959 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Wall_South
+[20:49:30.696961 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Wall_East_2
+[20:49:30.696961 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Wall_North
+[20:49:30.696961 DEBUG] [utilities.Polyhedron] Point_Of_Sale_Wall_West
+[20:49:30.708038 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[20:49:30.708038 DEBUG] [utilities.Polyhedron] Front_Retail_Floor
+[20:49:30.708038 DEBUG] [utilities.Polyhedron] [0, 3, 0] is on Surface3dEdge: start=[0, 0, 0], end=[0, 3, 0], count=1, firstSurface='Front_Retail_Floor'
+[20:49:30.708038 DEBUG] [utilities.Polyhedron] Front_Retail_Wall_West_2
+[20:49:30.708038 DEBUG] [utilities.Polyhedron] Front_Retail_Wall_South
+[20:49:30.708038 DEBUG] [utilities.Polyhedron] Front_Retail_Wall_North
+[20:49:30.709045 DEBUG] [utilities.Polyhedron] Front_Retail_Walll_East
+[20:49:30.709045 DEBUG] [utilities.Polyhedron] Front_Retail_Wall_West_1
+[20:49:30.709045 DEBUG] [utilities.Polyhedron] Front_Retail_Roof
+[20:49:30.709045 DEBUG] [utilities.Polyhedron] [0, 3, 6.096] is on Surface3dEdge: start=[0, 6, 6.096], end=[0, 3, 6.096], count=1, firstSurface='Front_Retail_Roof'
+[20:49:30.722569 WARN] [utilities.Polyhedron] Polyhedron is not enclosed in original testing. Trying to add missing colinear points.
+[20:49:30.722569 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_West_2
+[20:49:30.722569 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_South_3
+[20:49:30.722569 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_South_1
+[20:49:30.722569 DEBUG] [utilities.Polyhedron] Core_Retail_Roof 1
+[20:49:30.722569 DEBUG] [utilities.Polyhedron] [29.135, 0, 6.096] is on Surface3dEdge: start=[0, 0, 6.096], end=[29.135, 0, 6.096], count=1, firstSurface='Core_Retail_Roof 1'
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] [25.135, 0, 6.096] is on Surface3dEdge: start=[0, 0, 6.096], end=[25.135, 0, 6.096], count=1, firstSurface='Core_Retail_Roof 1'
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_East_1
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_North
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Roof
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Floor
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_East_2
+[20:49:30.723572 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_West_1
+[20:49:30.724570 DEBUG] [utilities.Polyhedron] Core_Retail_Wall_South_2
+[20:49:30.840828 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always Off Discrete', points to an object named OnOff 1 from field 1, but that object cannot be located.
+[20:49:30.840828 WARN] [utilities.idf.WorkspaceObject] Object of type 'Schedule:Constant' and named 'Always On Continuous', points to an object named Fractional 1 from field 1, but that object cannot be located.
+[20:49:30.849854 INFO] [openstudio.workflow.OSWorkflow] Successfully translated to IDF
+[20:49:30.849854 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlusMeasures - selected = true
+[20:49:30.849854 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute EnergyPlus Measures.
+[20:49:30.849854 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type EnergyPlusMeasure
+[20:49:30.849854 INFO] [openstudio.workflow.OSWorkflow] Finished applying EnergyPlus Measures.
+[20:49:30.850887 DEBUG] [openstudio.workflow.OSWorkflow] PreProcess - selected = true
+[20:49:30.889981 INFO] [openstudio.workflow.OSWorkflow] Beginning to collect output requests from Reporting measures.
+[20:49:30.889981 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[20:49:30.889981 INFO] [openstudio.workflow.OSWorkflow] Finished collecting output requests from Reporting measures.
+[20:49:30.889981 INFO] [openstudio.workflow.OSWorkflow] Running EnergyPlus Preprocess
+[20:49:30.892957 INFO] [openstudio.workflow.OSWorkflow] Finished preprocess job for EnergyPlus simulation
+[20:49:30.938794 DEBUG] [openstudio.workflow.OSWorkflow] Saved final IDF as C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/run/in.idf
+[20:49:30.938794 DEBUG] [openstudio.workflow.OSWorkflow] EnergyPlus - selected = true
+[20:49:30.939794 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Original Directory: D:/openstudioapplication-1.7.0/bin
+[20:49:30.939794 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing To run directory: C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/run
+[20:49:30.940795 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, szPath = 'D:\openstudioapplication-1.7.0\bin\openstudiolib.dll'
+[20:49:30.941787 DEBUG] [PathHelpers] completeAndNormalize: result = D:/openstudioapplication-1.7.0/bin/openstudiolib.dll
+[20:49:30.941787 DEBUG] [ApplicationPathHelpers] getOpenStudioModule, found 'D:/openstudioapplication-1.7.0/bin/openstudiolib.dll'
+[20:49:30.941787 DEBUG] [ApplicationPathHelpers] Searching for EnergyPlus in 'D:/openstudioapplication-1.7.0/EnergyPlus/energyplus.exe'
+[20:49:30.942785 DEBUG] [PathHelpers] completeAndNormalize: result = D:/openstudioapplication-1.7.0/EnergyPlus/energyplus.exe
+[20:49:30.942785 DEBUG] [ApplicationPathHelpers] Found EnergyPlus at 'D:/openstudioapplication-1.7.0/EnergyPlus/energyplus.exe'
+[20:49:30.942785 DEBUG] [PathHelpers] completeAndNormalize: result = D:/openstudioapplication-1.7.0/EnergyPlus/energyplus.exe
+[20:49:30.963355 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] EnergyPlus executable path is D:/openstudioapplication-1.7.0/EnergyPlus/energyplus.exe
+[20:49:30.963355 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] ExpandObjects executable path is D:/openstudioapplication-1.7.0/EnergyPlus/ExpandObjects.exe
+[20:49:30.963355 INFO] [openstudio.workflow.OSWorkflow] Starting simulation in run directory: C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/run
+[20:49:30.998983 INFO] [openstudio.workflow.OSWorkflow] Running command 'D:/openstudioapplication-1.7.0\EnergyPlus\ExpandObjects.exe'
+[20:49:31.346015 INFO] [openstudio.workflow.OSWorkflow] Running command '"D:/openstudioapplication-1.7.0\EnergyPlus\energyplus.exe" in.idf'
+[20:49:54.605861 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus returned '0'
+[20:49:54.608841 INFO] [openstudio.workflow.OSWorkflow] EnergyPlus finished with 2272849 warnings and 0 severe errors
+[20:49:54.608841 INFO] [openstudio.OSWorkflow.prepareEnergyPlusDir] Removing any copied EnergyPlus files
+[20:49:54.608841 DEBUG] [openstudio.OSWorkflow.prepareEnergyPlusDir] Changing Current Directory back to: D:/openstudioapplication-1.7.0/bin
+[20:49:54.609839 DEBUG] [openstudio.workflow.OSWorkflow] ReportingMeasures - selected = true
+[20:49:54.609839 INFO] [openstudio.workflow.OSWorkflow] Beginning to execute Reporting Measures.
+[20:49:54.610868 DEBUG] [openstudio.workflow.OSWorkflow] Finding measures of type ReportingMeasure
+[20:49:54.610868 INFO] [openstudio.workflow.OSWorkflow] Finished applying Reporting Measures.
+[20:49:54.613839 DEBUG] [openstudio.workflow.OSWorkflow] PostProcess - selected = true
+[20:49:54.613839 INFO] [openstudio.workflow.OSWorkflow] Gathering reports
+[20:49:54.614840 INFO] [openstudio.workflow.Util] Run directory: C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/run
+[20:49:54.615839 INFO] [openstudio.workflow.Util] Reports directoryC:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources
+[20:49:54.615839 INFO] [openstudio.workflow.Util] Saving EnergyPlus HTML report to C:/Users/xuebi/AppData/Local/Temp/osmodel-723b-d2e3-f405-f8a7-1736732957-0/resources/reports/eplustbl.html
+[20:49:54.617863 INFO] [openstudio.workflow.OSWorkflow] Finished gathering reports
+[20:49:54.617863 DEBUG] [openstudio.workflow.OSWorkflow] Cleanup - selected = true
+[20:49:54.617863 INFO] [openstudio.workflow.OSWorkflow] Beginning cleanup of the run directory
+[20:49:54.620863 INFO] [openstudio.workflow.OSWorkflow] Finished cleanup of the run directory

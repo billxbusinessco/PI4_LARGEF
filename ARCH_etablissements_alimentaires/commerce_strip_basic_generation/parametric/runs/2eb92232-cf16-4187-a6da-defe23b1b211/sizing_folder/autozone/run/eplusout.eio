@@ -1,0 +1,354 @@
+Program Version,EnergyPlus, Version 23.2.0-7636e6b3e9, YMD=2025.01.12 17:47
+! <Version>, Version ID
+ Version, 23.2
+! <Timesteps per Hour>, #TimeSteps, Minutes per TimeStep {minutes}
+ Timesteps per Hour,  6, 10
+! <System Convergence Limits>, Minimum System TimeStep {minutes}, Max HVAC Iterations, Minimum Plant Iterations, Maximum Plant Iterations
+ System Convergence Limits, 1, 20, 2, 8
+! <Simulation Control>, Do Zone Sizing, Do System Sizing, Do Plant Sizing, Do Design Days, Do Weather Simulation, Do HVAC Sizing Simulation
+ Simulation Control, Yes, No, No, Yes, No, Yes
+! <Performance Precision Tradeoffs>, Use Coil Direct Simulation, Zone Radiant Exchange Algorithm, Override Mode, Number of Timestep In Hour, Force Euler Method, Minimum Number of Warmup Days, Force Suppress All Begin Environment Resets, Minimum System Timestep, MaxZoneTempDiff, MaxAllowedDelTemp
+ Performance Precision Tradeoffs, No, ScriptF, Normal, 6, No, 1, No, 1.0, 0.300, 2.0000E-003
+! <Output Reporting Tolerances>, Tolerance for Time Heating Setpoint Not Met, Tolerance for Zone Cooling Setpoint Not Met Time
+ Output Reporting Tolerances, 0.200, 0.200, 
+! <Site:GroundTemperature:BuildingSurface>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:BuildingSurface,  19.53,  19.50,  19.54,  19.60,  20.00,  21.64,  22.23,  22.38,  21.45,  20.12,  19.80,  19.63
+! <Site:GroundTemperature:FCfactorMethod>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:FCfactorMethod,   5.50,  -2.00,  -7.60,  -6.30,  -6.60,  -0.30,   4.90,  10.20,  13.80,  17.00,  16.60,  11.10
+! <Site:GroundTemperature:Shallow>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Shallow,  -1.60,  -5.40,  -6.40,  -5.50,  -0.40,   5.30,  10.80,  14.70,  15.80,  14.00,   9.50,   4.00
+! <Site:GroundTemperature:Deep>,Jan{C},Feb{C},Mar{C},Apr{C},May{C},Jun{C},Jul{C},Aug{C},Sep{C},Oct{C},Nov{C},Dec{C}
+ Site:GroundTemperature:Deep,   4.00,   1.30,  -0.40,  -0.90,   0.10,   2.30,   5.20,   8.00,   9.90,  10.30,   9.20,   7.00
+! <Site:GroundReflectance>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:SnowModifier>, Normal, Daylighting {dimensionless}
+ Site:GroundReflectance:SnowModifier,   1.000,   1.000
+! <Site:GroundReflectance:Snow>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Site:GroundReflectance:Snow:Daylighting>,Jan{dimensionless},Feb{dimensionless},Mar{dimensionless},Apr{dimensionless},May{dimensionless},Jun{dimensionless},Jul{dimensionless},Aug{dimensionless},Sep{dimensionless},Oct{dimensionless},Nov{dimensionless},Dec{dimensionless}
+ Site:GroundReflectance:Snow:Daylighting,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20,  0.20
+! <Environment:Weather Station>,Wind Sensor Height Above Ground {m},Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Sensor Height Above Ground {m},Wind Speed Modifier Coefficient-Internal,Temperature Modifier Coefficient-Internal
+Environment:Weather Station,10.000,0.140,270.000,1.500,1.586,9.750E-003
+! <Site:Location>, Location Name, Latitude {N+/S- Deg}, Longitude {E+/W- Deg},  Time Zone Number {GMT+/-}, Elevation {m},  Standard Pressure at Elevation {Pa}, Standard RhoAir at Elevation
+Site:Location,Calgary Intl AP AB CAN CWEC2020 WMO#=718770,51.11,-114.02,-7.00,1084.10,88961,1.0574
+! <Site Water Mains Temperature Information>,Calculation Method{},Water Mains Temperature Schedule Name{},Annual Average Outdoor Air Temperature{C},Maximum Difference In Monthly Average Outdoor Air Temperatures{deltaC},Fixed Default Water Mains Temperature{C}
+Site Water Mains Temperature Information,Correlation,NA,4.69,24.60,NA
+! <Building Information>, Building Name,North Axis {deg},Terrain,  Loads Convergence Tolerance Value,Temperature Convergence Tolerance Value,  Solar Distribution,Maximum Number of Warmup Days,Minimum Number of Warmup Days
+ Building Information,RetailStripmall,0.000,Suburbs,4.00000E-002,0.40000,FullExterior,25,1
+! <Inside Convection Algorithm>, Algorithm {Simple | TARP | CeilingDiffuser | AdaptiveConvectionAlgorithm}
+Inside Convection Algorithm,TARP
+! <Outside Convection Algorithm>, Algorithm {SimpleCombined | TARP | MoWitt | DOE-2 | AdaptiveConvectionAlgorithm}
+Outside Convection Algorithm,TARP
+! <Sky Radiance Distribution>, Value {Anisotropic}
+Sky Radiance Distribution,Anisotropic
+! <Zone Air Solution Algorithm>, Algorithm {ThirdOrderBackwardDifference | AnalyticalSolution | EulerMethod}, Space Heat Balance Sizing, Space Heat Balance Simulation
+ Zone Air Solution Algorithm, ThirdOrderBackwardDifference, No, No
+! <Zone Air Carbon Dioxide Balance Simulation>, Simulation {Yes/No}, Carbon Dioxide Concentration
+ Zone Air Carbon Dioxide Balance Simulation, No,N/A
+! <Zone Air Generic Contaminant Balance Simulation>, Simulation {Yes/No}, Generic Contaminant Concentration
+ Zone Air Generic Contaminant Balance Simulation, No,N/A
+! <Zone Air Mass Flow Balance Simulation>, Enforce Mass Balance, Adjust Zone Mixing and Return {AdjustMixingOnly | AdjustReturnOnly | AdjustMixingThenReturn | AdjustReturnThenMixing | None}, Adjust Zone Infiltration {AddInfiltration | AdjustInfiltration | None}, Infiltration Zones {MixingSourceZonesOnly | AllZones}
+ Zone Air Mass Flow Balance Simulation, No,N/A,N/A,N/A
+! <HVACSystemRootFindingAlgorithm>, Value {RegulaFalsi | Bisection | BisectionThenRegulaFalsi | RegulaFalsiThenBisection}
+ HVACSystemRootFindingAlgorithm, RegulaFalsi
+! <Environment:Site Atmospheric Variation>,Wind Speed Profile Exponent {},Wind Speed Profile Boundary Layer Thickness {m},Air Temperature Gradient Coefficient {K/m}
+Environment:Site Atmospheric Variation,0.220,370.000,6.500000E-003
+! <Surface Geometry>,Starting Corner,Vertex Input Direction,Coordinate System,Daylight Reference Point Coordinate System,Rectangular (Simple) Surface Coordinate System
+ Surface Geometry,UpperLeftCorner,Counterclockwise,RelativeCoordinateSystem,RelativeCoordinateSystem,RelativeToZoneOrigin
+! <Surface Heat Transfer Algorithm>, Value {CTF - ConductionTransferFunction | EMPD - MoisturePenetrationDepthConductionTransferFunction | CondFD - ConductionFiniteDifference | HAMT - CombinedHeatAndMoistureFiniteElement} - Description,Inside Surface Max Temperature Limit{C}, Surface Convection Coefficient Lower Limit {W/m2-K}, Surface Convection Coefficient Upper Limit {W/m2-K}
+Surface Heat Transfer Algorithm, CTF - ConductionTransferFunction,200,0.10,1000.0
+! <Shading Summary>, Number of Fixed Detached Shades, Number of Building Detached Shades, Number of Attached Shades
+ Shading Summary,0,0,0
+! <Zone Summary>, Number of Zones, Number of Zone Surfaces, Number of SubSurfaces
+ Zone Summary,10,108,48
+! <Zone Information>,Zone Name,North Axis {deg},Origin X-Coordinate {m},Origin Y-Coordinate {m},Origin Z-Coordinate {m},Centroid X-Coordinate {m},Centroid Y-Coordinate {m},Centroid Z-Coordinate {m},Type,Zone Multiplier,Zone List Multiplier,Minimum X {m},Maximum X {m},Minimum Y {m},Maximum Y {m},Minimum Z {m},Maximum Z {m},Ceiling Height {m},Volume {m3},Zone Inside Convection Algorithm {Simple-Detailed-CeilingDiffuser-TrombeWall},Zone Outside Convection Algorithm {Simple-Detailed-Tarp-MoWitt-DOE-2-BLAST}, Floor Area {m2},Exterior Gross Wall Area {m2},Exterior Net Wall Area {m2},Exterior Window Area {m2}, Number of Surfaces, Number of SubSurfaces, Number of Shading SubSurfaces,  Part of Total Building Area
+ Zone Information, LGSTORE1 ZN,0.0,0.00,0.00,0.00,7.62,11.43,2.59,1,1,1,0.00,15.24,0.00,22.86,0.00,5.18,5.18,1804.64,TARP,TARP,348.39,276.30,247.76,20.75,6,8,0,Yes
+ Zone Information, LGSTORE2 ZN,0.0,0.00,0.00,0.00,53.34,11.43,2.59,1,1,1,45.72,60.96,0.00,22.86,0.00,5.18,5.18,1804.64,TARP,TARP,348.39,157.89,129.43,20.70,6,8,0,Yes
+ Zone Information, SMSTORE1 ZN,0.0,0.00,0.00,0.00,19.05,11.43,2.59,1,1,1,15.24,22.86,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.67,10.37,6,4,0,Yes
+ Zone Information, SMSTORE2 ZN,0.0,0.00,0.00,0.00,26.67,11.43,2.59,1,1,1,22.86,30.48,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE3 ZN,0.0,0.00,0.00,0.00,34.29,11.43,2.59,1,1,1,30.48,38.10,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE4 ZN,0.0,0.00,0.00,0.00,41.91,11.43,2.59,1,1,1,38.10,45.72,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE5 ZN,0.0,0.00,0.00,0.00,64.77,11.43,2.59,1,1,1,60.96,68.58,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE6 ZN,0.0,0.00,0.00,0.00,72.39,11.43,2.59,1,1,1,68.58,76.20,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE7 ZN,0.0,0.00,0.00,0.00,80.01,11.43,2.59,1,1,1,76.20,83.82,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,78.94,64.71,10.35,6,4,0,Yes
+ Zone Information, SMSTORE8 ZN,0.0,0.00,0.00,0.00,87.63,11.43,2.59,1,1,1,83.82,91.44,0.00,22.86,0.00,5.18,5.18,902.32,TARP,TARP,174.19,197.36,183.13,10.35,6,4,0,Yes
+! <Zone Internal Gains Nominal>,Zone Name, Floor Area {m2},# Occupants,Area per Occupant {m2/person},Occupant per Area {person/m2},Interior Lighting {W/m2},Electric Load {W/m2},Gas Load {W/m2},Other Load {W/m2},Hot Water Eq {W/m2},Steam Equipment {W/m2},Sum Loads per Area {W/m2},Outdoor Controlled Baseboard Heat
+ Zone Internal Gains Nominal, LGSTORE1 ZN,348.39,11.6,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, LGSTORE2 ZN,348.39,11.6,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE1 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE2 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE3 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE4 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE5 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE6 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE7 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+ Zone Internal Gains Nominal, SMSTORE8 ZN,174.19,5.8,29.969,3.337E-002,18.100,2.500,0.000,0.000,0.000,0.000,20.600,No
+! <People Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Number of People {},People/Floor Area {person/m2},Floor Area per person {m2/person},Fraction Radiant,Fraction Convected,Sensible Fraction Calculation,Activity level,ASHRAE 55 Warnings,Carbon Dioxide Generation Rate,Nominal Minimum Number of People,Nominal Maximum Number of People
+ People Internal Gains Nominal, SMSTORE2 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE2 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, SMSTORE3 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE3 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, LGSTORE2 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,LGSTORE2 ZN,348.39,11.6,11.6,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,10
+ People Internal Gains Nominal, SMSTORE5 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE5 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, SMSTORE7 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE7 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, LGSTORE1 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,LGSTORE1 ZN,348.39,11.6,11.6,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,10
+ People Internal Gains Nominal, SMSTORE8 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE8 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, SMSTORE1 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE1 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, SMSTORE4 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE4 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+ People Internal Gains Nominal, SMSTORE6 SPACE FUNCTION RETAIL - SALES PEOPLE,NECB-C-OCCUPANCY,SMSTORE6 ZN,174.19,5.8,5.8,3.337E-002,29.969,0.300,0.700,AutoCalculate,NECB-ACTIVITY,No,3.8200E-008,0,5
+! <Lights Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Lighting Level {W},Lights/Floor Area {W/m2},Lights per person {W/person},Fraction Return Air,Fraction Radiant,Fraction Short Wave,Fraction Convected,Fraction Replaceable,End-Use Category,Nominal Minimum Lighting Level {W},Nominal Maximum Lighting Level {W}
+ Lights Internal Gains Nominal, SMSTORE2 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE2 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, SMSTORE3 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE3 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, LGSTORE2 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,LGSTORE2 ZN,348.39,11.6,6305.741,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,315.287,5675.167
+ Lights Internal Gains Nominal, SMSTORE5 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE5 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, SMSTORE7 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE7 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, LGSTORE1 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,LGSTORE1 ZN,348.39,11.6,6305.741,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,315.287,5675.167
+ Lights Internal Gains Nominal, SMSTORE8 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE8 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, SMSTORE1 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE1 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, SMSTORE4 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE4 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+ Lights Internal Gains Nominal, SMSTORE6 SPACE FUNCTION RETAIL - SALES LIGHTS,NECB-C-LIGHTING,SMSTORE6 ZN,174.19,5.8,3152.871,18.100,542.429,0.000,0.500,0.200,0.300,1.000,General,157.644,2837.584
+! <ElectricEquipment Internal Gains Nominal>,Name,Schedule Name,Zone Name,Zone Floor Area {m2},# Zone Occupants,Equipment Level {W},Equipment/Floor Area {W/m2},Equipment per person {W/person},Fraction Latent,Fraction Radiant,Fraction Lost,Fraction Convected,End-Use SubCategory,Nominal Minimum Equipment Level {W},Nominal Maximum Equipment Level {W}
+ ElectricEquipment Internal Gains Nominal, SMSTORE2 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE2 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, SMSTORE3 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE3 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, LGSTORE2 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,LGSTORE2 ZN,348.39,11.6,870.959,2.500,74.921,0.000,0.500,0.000,0.500,General,43.548,783.863
+ ElectricEquipment Internal Gains Nominal, SMSTORE5 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE5 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, SMSTORE7 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE7 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, LGSTORE1 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,LGSTORE1 ZN,348.39,11.6,870.959,2.500,74.921,0.000,0.500,0.000,0.500,General,43.548,783.863
+ ElectricEquipment Internal Gains Nominal, SMSTORE8 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE8 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, SMSTORE1 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE1 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, SMSTORE4 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE4 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+ ElectricEquipment Internal Gains Nominal, SMSTORE6 SPACE FUNCTION RETAIL - SALES ELEC EQUIP,NECB-C-ELECTRIC-EQUIPMENT,SMSTORE6 ZN,174.19,5.8,435.479,2.500,74.921,0.000,0.500,0.000,0.500,General,21.774,391.931
+! <Shadowing/Sun Position Calculations Annual Simulations>, Shading Calculation Method, Shading Calculation Update Frequency Method, Shading Calculation Update Frequency {days}, Maximum Figures in Shadow Overlap Calculations {}, Polygon Clipping Algorithm, Pixel Counting Resolution, Sky Diffuse Modeling Algorithm, Output External Shading Calculation Results, Disable Self-Shading Within Shading Zone Groups, Disable Self-Shading From Shading Zone Groups to Other Zones
+Shadowing/Sun Position Calculations Annual Simulations,PolygonClipping,Periodic,20,15000,SutherlandHodgman,512,SimpleSkyDiffuseModeling,No,No,No
+! <ZoneInfiltration Airflow Stats Nominal>,Name,Schedule Name,Zone Name, Zone Floor Area {m2}, # Zone Occupants,Design Volume Flow Rate {m3/s},Volume Flow Rate/Floor Area {m3/s-m2},Volume Flow Rate/Exterior Surface Area {m3/s-m2},ACH - Air Changes per Hour,Equation A - Constant Term Coefficient {},Equation B - Temperature Term Coefficient {1/C},Equation C - Velocity Term Coefficient {s/m}, Equation D - Velocity Squared Term Coefficient {s2/m2}
+ ZoneInfiltration Airflow Stats Nominal, LGSTORE1 INFILTRATION,ALWAYS ON DISCRETE,LGSTORE1 ZN,348.39,11.6,0.706,2.026E-003,1.116E-003,1.408,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, LGSTORE2 INFILTRATION,ALWAYS ON DISCRETE,LGSTORE2 ZN,348.39,11.6,0.574,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE1 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE1 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE2 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE2 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE3 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE3 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE4 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE4 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE5 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE5 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE6 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE6 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE7 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE7 ZN,174.19,5.8,0.287,1.647E-003,1.116E-003,1.144,0.000,0.000,0.224,0.000
+ ZoneInfiltration Airflow Stats Nominal, SMSTORE8 INFILTRATION,ALWAYS ON DISCRETE,SMSTORE8 ZN,174.19,5.8,0.419,2.405E-003,1.116E-003,1.672,0.000,0.000,0.224,0.000
+! <AirFlow Model>, Simple
+ AirFlow Model, Simple
+! <RoomAir Model>, Zone Name, Mixing/Mundt/UCSDDV/UCSDCV/UCSDUFI/UCSDUFE/User Defined
+RoomAir Model,LGSTORE1 ZN,Mixing/Well-Stirred
+RoomAir Model,LGSTORE2 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE1 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE2 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE3 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE4 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE5 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE6 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE7 ZN,Mixing/Well-Stirred
+RoomAir Model,SMSTORE8 ZN,Mixing/Well-Stirred
+! <AirflowNetwork Model:Control>, No Multizone or Distribution/Multizone with Distribution/Multizone without Distribution/Multizone with Distribution only during Fan Operation
+AirflowNetwork Model:Control,NoMultizoneOrDistribution
+! <Zone Volume Capacitance Multiplier>, Sensible Heat Capacity Multiplier, Moisture Capacity Multiplier, Carbon Dioxide Capacity Multiplier, Generic Contaminant Capacity Multiplier
+Zone Volume Capacitance Multiplier,   1.000 ,   1.000,   1.000,   1.000
+! <Load Timesteps in Zone Design Calculation Averaging Window>, Value
+ Load Timesteps in Zone Design Calculation Averaging Window,    6
+! <Heating Sizing Factor Information>, Sizing Factor ID, Value
+ Heating Sizing Factor Information, Global,   1.2500    
+ Heating Sizing Factor Information, Zone LGSTORE1 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone LGSTORE2 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE1 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE2 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE3 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE4 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE5 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE6 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE7 ZN,   1.2500    
+ Heating Sizing Factor Information, Zone SMSTORE8 ZN,   1.2500    
+! <Cooling Sizing Factor Information>, Sizing Factor ID, Value
+ Cooling Sizing Factor Information, Global,   1.1500    
+ Cooling Sizing Factor Information, Zone LGSTORE1 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone LGSTORE2 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE1 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE2 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE3 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE4 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE5 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE6 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE7 ZN,   1.1500    
+ Cooling Sizing Factor Information, Zone SMSTORE8 ZN,   1.1500    
+! <Zone Sizing Information>, Zone Name, Load Type, Calc Des Load {W}, User Des Load {W}, Calc Des Air Flow Rate {m3/s}, User Des Air Flow Rate {m3/s}, Design Day Name, Date/Time of Peak, Temperature at Peak {C}, Humidity Ratio at Peak {kgWater/kgDryAir}, Floor Area {m2}, # Occupants, Calc Outdoor Air Flow Rate {m3/s}, Calc DOAS Heat Addition Rate {W}
+ Zone Sizing Information, LGSTORE1 ZN, Cooling, 15220.56775, 17503.65291, 1.41035, 1.62190, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 13:50:00, 28.69750, 7.74064E-003, 348.38640, 11.62500, 0.53094, 0.00000
+ Zone Sizing Information, LGSTORE1 ZN, Heating, 28677.99701, 35847.49626, 1.34773, 1.68466, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:10:00, -27.70000, 3.37074E-004, 348.38640, 11.62500, 0.53094, 0.00000
+ Zone Sizing Information, LGSTORE2 ZN, Cooling, 14703.24934, 16908.73674, 1.36243, 1.56679, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 13:50:00, 28.69750, 7.74064E-003, 348.38640, 11.62500, 0.53094, 0.00000
+ Zone Sizing Information, LGSTORE2 ZN, Heating, 22986.93834, 28733.67293, 1.07993, 1.34991, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:10:00, -27.70000, 3.37074E-004, 348.38640, 11.62500, 0.53094, 0.00000
+ Zone Sizing Information, SMSTORE1 ZN, Cooling, 7709.14067, 8865.51177, 0.71434, 0.82149, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE1 ZN, Heating, 12359.15483, 15448.94354, 0.58863, 0.73579, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE2 ZN, Cooling, 7574.99959, 8711.24952, 0.70191, 0.80720, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE2 ZN, Heating, 12183.25408, 15229.06760, 0.58020, 0.72525, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE3 ZN, Cooling, 7572.56952, 8708.45495, 0.70169, 0.80694, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE3 ZN, Heating, 12170.96193, 15213.70241, 0.57961, 0.72451, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE4 ZN, Cooling, 7687.70292, 8840.85836, 0.71235, 0.81921, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE4 ZN, Heating, 12213.66974, 15267.08718, 0.58165, 0.72706, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE5 ZN, Cooling, 7688.10161, 8841.31685, 0.71239, 0.81925, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE5 ZN, Heating, 12215.68232, 15269.60290, 0.58175, 0.72718, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE6 ZN, Cooling, 7575.42888, 8711.74321, 0.70195, 0.80724, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE6 ZN, Heating, 12192.18690, 15240.23363, 0.58063, 0.72578, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE7 ZN, Cooling, 7603.51249, 8744.03936, 0.70455, 0.81024, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:00:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE7 ZN, Heating, 12410.12657, 15512.65821, 0.59109, 0.73886, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE8 ZN, Cooling, 8318.37187, 9566.12765, 0.77078, 0.88640, CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB, 7/21 14:10:00, 28.80000, 7.74080E-003, 174.19320, 5.81250, 0.26547, 0.00000
+ Zone Sizing Information, SMSTORE8 ZN, Heating, 17727.72471, 22159.65589, 0.84610, 1.05763, CALGARY INTL AP ANN HTG 99.6% CONDNS DB, 1/21 08:20:00, -27.70000, 3.37074E-004, 174.19320, 5.81250, 0.26547, 0.00000
+! <Component Sizing Information>, Component Type, Component Name, Input Field Description, Value
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 1, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 1, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 2, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 2, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 3, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 3, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 4, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 4, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 5, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 5, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 6, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 6, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 7, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 7, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 8, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 8, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 9, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 9, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 10, User-Specified Maximum Heating Air Flow Rate [m3/s], 0.00000
+ Component Sizing Information, ZoneHVAC:IdealLoadsAirSystem, ZONE HVAC IDEAL LOADS AIR SYSTEM 10, User-Specified Maximum Cooling Air Flow Rate [m3/s], 0.00000
+! <Environment>,Environment Name,Environment Type, Start Date, End Date, Start DayOfWeek, Duration {#days}, Source:Start DayOfWeek,  Use Daylight Saving, Use Holidays, Apply Weekend Holiday Rule,  Use Rain Values, Use Snow Values, Sky Temperature Model
+! <Environment:Special Days>, Special Day Name, Special Day Type, Source, Start Date, Duration {#days}
+! <Environment:Daylight Saving>, Daylight Saving Indicator, Source, Start Date, End Date
+! <Environment:WarmupDays>, NumberofWarmupDays
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+! <Environment:Design Day Data>, Max Dry-Bulb Temp {C}, Temp Range {dC}, Temp Range Ind Type, Hum Ind Type, Hum Ind Value at Max Temp, Hum Ind Units, Pressure {Pa}, Wind Direction {deg CW from N}, Wind Speed {m/s}, Clearness, Rain, Snow
+! <Environment:Design Day Misc>,DayOfYear,ASHRAE A Coeff,ASHRAE B Coeff,ASHRAE C Coeff,Solar Constant-Annual Variation,Eq of Time {minutes}, Solar Declination Angle {deg}, Solar Model
+Environment:Design Day Data,28.80,12.30,DefaultMultipliers,Wetbulb,16.00,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+! <Tabular Report>,Style,Unit Conversion
+Tabular Report,HTML,None
+! <Warmup Convergence Information>,Zone Name,Environment Type/Name,Average Warmup Temperature Difference {deltaC},Std Dev Warmup Temperature Difference {deltaC},Max Temperature Pass/Fail Convergence,Min Temperature Pass/Fail Convergence,Average Warmup Load Difference {W},Std Dev Warmup Load Difference {W},Heating Load Pass/Fail Convergence,Cooling Load Pass/Fail Convergence
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,7.8008859811E-002,0.1797223006,Pass,Pass,5.1739211086E-002,0.1095520009,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.3743932643E-002,0.2324761353,Pass,Pass,8.3075015482E-002,0.2502685616,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,8.9937446799E-002,0.2240167735,Pass,Pass,0.1021517904,0.3112756813,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.1809983865E-002,0.2361820192,Pass,Pass,0.1006723019,0.3319812415,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.2413911645E-002,0.2392940153,Pass,Pass,0.1009253941,0.3524167663,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.2915680986E-002,0.2387689886,Pass,Pass,0.1079145964,0.3618886611,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.2744655043E-002,0.2378743920,Pass,Pass,0.1081628212,0.3578984491,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,9.1710087110E-002,0.2357078116,Pass,Pass,0.1006672011,0.3295350506,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,8.9192894551E-002,0.2235683892,Pass,Pass,0.2660185930,2.1301799741,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,8.0158165613E-002,0.1852504872,Pass,Pass,6.4601545768E-002,0.1515082217,Pass,Pass
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,25.50,12.30,DefaultMultipliers,Wetbulb,17.80,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.6185816987E-002,0.3063929480,Pass,Pass,5.7099184648,56.0616131786,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.6443068875E-002,0.3090310289,Pass,Pass,0.3595897754,1.3454262621,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5208534896E-002,0.3015129514,Pass,Pass,0.4050574368,1.8096169011,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5442298075E-002,0.3024126200,Pass,Pass,0.3210349951,0.9893500869,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5506644896E-002,0.3027655774,Pass,Pass,0.4077551193,1.7818025163,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5301599082E-002,0.3022624521,Pass,Pass,0.2830137513,0.7875613831,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5295979431E-002,0.3022279174,Pass,Pass,0.2811313643,0.7828606825,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5434736384E-002,0.3023718252,Pass,Pass,0.3034316155,0.8702506107,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.5260337741E-002,0.3013101722,Pass,Pass,0.3179999660,0.9345501376,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,9.3943052775E-002,0.2945363554,Pass,Pass,0.2928151814,0.7953671429,Pass,Pass
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-27.70,0.00,DefaultMultipliers,Wetbulb,-27.70,{C},88961,200,2.7,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  2
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3708367428,Pass,Pass,2.6802052112E-002,9.5786182892E-002,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3669671237,Pass,Pass,3.4951965240E-002,0.1296925622,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3668392792,Pass,Pass,3.6466557844E-002,0.1329718478,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3666145352,Pass,Pass,3.6949323355E-002,0.1348592311,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3665972667,Pass,Pass,3.7004738691E-002,0.1351135189,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3666477629,Pass,Pass,3.6827149823E-002,0.1340823878,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3666509157,Pass,Pass,3.6816013468E-002,0.1340311642,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3666273607,Pass,Pass,3.6907479631E-002,0.1346662628,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3669125507,Pass,Pass,3.6415165608E-002,0.1332746920,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,5.5555555556E-002,0.3736694874,Pass,Pass,2.3806187098E-002,8.1506540866E-002,Pass,Pass
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.80,12.30,DefaultMultipliers,Wetbulb,16.00,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,25.50,12.30,DefaultMultipliers,Wetbulb,17.80,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-27.70,0.00,DefaultMultipliers,Wetbulb,-27.70,{C},88961,200,2.7,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.80,12.30,DefaultMultipliers,Wetbulb,16.00,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,25.50,12.30,DefaultMultipliers,Wetbulb,17.80,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-27.70,0.00,DefaultMultipliers,Wetbulb,-27.70,{C},88961,200,2.7,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,28.80,12.30,DefaultMultipliers,Wetbulb,16.00,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,7.8008859811E-002,0.1797223006,Pass,Pass,5.1739211086E-002,0.1095520009,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.3743932643E-002,0.2324761353,Pass,Pass,8.3075015482E-002,0.2502685616,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,8.9937446799E-002,0.2240167735,Pass,Pass,0.1021517904,0.3112756813,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.1809983865E-002,0.2361820192,Pass,Pass,0.1006723019,0.3319812415,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.2413911645E-002,0.2392940153,Pass,Pass,0.1009253941,0.3524167663,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.2915680986E-002,0.2387689886,Pass,Pass,0.1079145964,0.3618886611,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.2744655043E-002,0.2378743920,Pass,Pass,0.1081628212,0.3578984491,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,9.1710087110E-002,0.2357078116,Pass,Pass,0.1006672011,0.3295350506,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,8.9192894551E-002,0.2235683892,Pass,Pass,0.2660185930,2.1301799741,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB,8.0158165613E-002,0.1852504872,Pass,Pass,6.4601545768E-002,0.1515082217,Pass,Pass
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,25.50,12.30,DefaultMultipliers,Wetbulb,17.80,{C},88961,160,4.5,0.00,No,No
+Environment:Design Day Misc,202,1084.4,0.2082,0.1365,1.0,-6.23,20.6,ASHRAETau
+Environment:WarmupDays,  5
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.6185816987E-002,0.3063929480,Pass,Pass,5.7099184648,56.0616131786,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.6443068875E-002,0.3090310289,Pass,Pass,0.3595897754,1.3454262621,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5208534896E-002,0.3015129514,Pass,Pass,0.4050574368,1.8096169011,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5442298075E-002,0.3024126200,Pass,Pass,0.3210349951,0.9893500869,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5506644896E-002,0.3027655774,Pass,Pass,0.4077551193,1.7818025163,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5301599082E-002,0.3022624521,Pass,Pass,0.2830137513,0.7875613831,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5295979431E-002,0.3022279174,Pass,Pass,0.2811313643,0.7828606825,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5434736384E-002,0.3023718252,Pass,Pass,0.3034316155,0.8702506107,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.5260337741E-002,0.3013101722,Pass,Pass,0.3179999660,0.9345501376,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB,9.3943052775E-002,0.2945363554,Pass,Pass,0.2928151814,0.7953671429,Pass,Pass
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment:Design Day Data,-27.70,0.00,DefaultMultipliers,Wetbulb,-27.70,{C},88961,200,2.7,0.00,No,No
+Environment:Design Day Misc, 21,1229.0,0.1415,5.7310E-002,1.0,-11.15,-20.1,ASHRAEClearSky
+Environment:WarmupDays,  2
+ Warmup Convergence Information,LGSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3708367428,Pass,Pass,2.6802052112E-002,9.5786182892E-002,Pass,Pass
+ Warmup Convergence Information,LGSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3669671237,Pass,Pass,3.4951965240E-002,0.1296925622,Pass,Pass
+ Warmup Convergence Information,SMSTORE1 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3668392792,Pass,Pass,3.6466557844E-002,0.1329718478,Pass,Pass
+ Warmup Convergence Information,SMSTORE2 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3666145352,Pass,Pass,3.6949323355E-002,0.1348592311,Pass,Pass
+ Warmup Convergence Information,SMSTORE3 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3665972667,Pass,Pass,3.7004738691E-002,0.1351135189,Pass,Pass
+ Warmup Convergence Information,SMSTORE4 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3666477629,Pass,Pass,3.6827149823E-002,0.1340823878,Pass,Pass
+ Warmup Convergence Information,SMSTORE5 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3666509157,Pass,Pass,3.6816013468E-002,0.1340311642,Pass,Pass
+ Warmup Convergence Information,SMSTORE6 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3666273607,Pass,Pass,3.6907479631E-002,0.1346662628,Pass,Pass
+ Warmup Convergence Information,SMSTORE7 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3669125507,Pass,Pass,3.6415165608E-002,0.1332746920,Pass,Pass
+ Warmup Convergence Information,SMSTORE8 ZN,SizingPeriod: CALGARY INTL AP ANN HTG 99.6% CONDNS DB,5.5555555556E-002,0.3736694874,Pass,Pass,2.3806187098E-002,8.1506540866E-002,Pass,Pass
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS DB=>MWB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment,CALGARY INTL AP ANN CLG .4% CONDNS WB=>MDB HVAC Sizing Pass 1,SizingPeriod:DesignDay,07/21,07/21,SummerDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+Environment,CALGARY INTL AP ANN HTG 99.6% CONDNS DB HVAC Sizing Pass 1,SizingPeriod:DesignDay,01/21,01/21,WinterDesignDay,1,N/A,N/A,N/A,N/A,N/A,N/A,Clark and Allen
+Environment:Daylight Saving,No,SizingPeriod:DesignDay
+! <Program Control Information:Threads/Parallel Sims>, Threading Supported,Maximum Number of Threads, Env Set Threads (OMP_NUM_THREADS), EP Env Set Threads (EP_OMP_NUM_THREADS), IDF Set Threads, Number of Threads Used (Interior Radiant Exchange), Number Nominal Surfaces, Number Parallel Sims
+Program Control:Threads/Parallel Sims, No,1, N/A, N/A, N/A, N/A, N/A, N/A
+End of Data
